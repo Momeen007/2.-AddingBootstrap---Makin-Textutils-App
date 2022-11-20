@@ -5,12 +5,12 @@ import About from './components/AboutUs';
 import Alert from "./components/Alert";
 import { useState } from 'react';
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 
 
@@ -58,28 +58,28 @@ setAlert(null);
   
   return (
           <>
-    <Router>
+//     <Router>
       
 
       <Navbar title="TextUtils" aboutText= "About" mode={Mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
       <div className="container my-3">
                
-          <Routes>
-            <Route exact path="/about" element={<About/>} >
+//           <Routes>
+//             <Route exact path="/about" element={<About/>} >
 
-            </Route>
+//             </Route>
 
-            <Route exact path="/home" element={<TextForm showAlert={showAlert} heading="Enter your text to Analyse below" mode={Mode}/>}>
+//             <Route exact path="/home" element={<TextForm showAlert={showAlert} heading="Enter your text to Analyse below" mode={Mode}/>}>
 
-            </Route>
-          </Routes>
+//             </Route>
+//           </Routes>
 
 
       </div>
 
 
-      </Router>
+//       </Router>
 
     </>
     
